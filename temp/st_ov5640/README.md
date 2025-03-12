@@ -38,3 +38,10 @@ Please refer to the repository of the BSP **board** driver you are using to know
 If you have any issue with the **software content** of this repository, you can file an issue [here](https://github.com/STMicroelectronics/ov5640/issues/new/choose).
 
 For any other question related to the product, the tools, the environment, you can submit a topic to the [ST Community](https://community.st.com/s/).
+
+
+此处是st给的官方例程，并没有使用到
+
+
+
+
