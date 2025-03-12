@@ -1,1 +1,6 @@
 # Emb_competition
+stm32代码在emb文件夹下叫emb_H743VIT6
+微信小程序代码也在emb文件夹下叫emb_WX
+test文件夹下是商家给的摄像头例程
+DEVICES-KEY-67d0448624d772325524e498_emp_test.txt是华为云密钥
+emb_N.vscd是大致流程图
