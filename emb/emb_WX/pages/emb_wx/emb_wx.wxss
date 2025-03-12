@@ -1,0 +1,69 @@
+/* pages/emb_wx/emb_wx.wxss */
+.container {
+    padding: 30rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 36rpx;
+    font-weight: bold;
+    margin-bottom: 30rpx;
+  }
+  
+  .image-container {
+    width: 100%;
+    height: 400rpx;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30rpx;
+    border-radius: 8rpx;
+    overflow: hidden;
+  }
+  
+  .preview-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .no-image {
+    color: #999;
+    font-size: 32rpx;
+  }
+  
+  .controls {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30rpx;
+  }
+  
+  .controls button {
+    font-size: 28rpx;
+  }
+  
+  .input-area {
+    width: 100%;
+    margin-bottom: 30rpx;
+  }
+  
+  .input-area textarea {
+    width: 100%;
+    padding: 20rpx;
+    border: 1rpx solid #ddd;
+    border-radius: 8rpx;
+    font-size: 24rpx;
+    min-height: 200rpx;
+  }
+  
+  .status {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+    font-size: 28rpx;
+  }

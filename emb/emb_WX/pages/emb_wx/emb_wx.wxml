@@ -1,0 +1,28 @@
+<!--pages/emb_wx/emb_wx.wxml-->
+<view class="container">
+  <view class="title">JPEG图像解析测试</view>
+  
+  <view class="image-container">
+    <image wx:if="{{imageUrl}}" src="{{imageUrl}}" mode="aspectFit" class="preview-image"></image>
+    <view wx:else class="no-image">等待测试图像...</view>
+  </view>
+  
+  <view class="controls">
+    <button bindtap="testHexData" type="primary">测试十六进制数据</button>
+    <button bindtap="testBase64Data" type="default">测试Base64数据</button>
+    <button bindtap="clearImage" type="warn">清除图像</button>
+  </view>
+  
+  <view class="input-area">
+    <textarea placeholder="在此粘贴JPEG二进制数据（十六进制或Base64格式）" 
+              value="{{inputData}}" 
+              bindinput="onInputChange"
+              auto-height="true"
+              maxlength="-1"></textarea>
+  </view>
+  
+  <view class="status">
+    <text>状态: {{status}}</text>
+    <text wx:if="{{imageSize}}">图像大小: {{imageSize}} 字节</text>
+  </view>
+</view>
