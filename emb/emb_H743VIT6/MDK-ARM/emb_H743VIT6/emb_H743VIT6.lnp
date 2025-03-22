@@ -6,6 +6,7 @@
 "emb_h743vit6\usart.o"
 "emb_h743vit6\stm32h7xx_it.o"
 "emb_h743vit6\stm32h7xx_hal_msp.o"
+"emb_h743vit6\at_esp_01s.o"
 "emb_h743vit6\stm32h7xx_hal_cortex.o"
 "emb_h743vit6\stm32h7xx_hal_rcc.o"
 "emb_h743vit6\stm32h7xx_hal_rcc_ex.o"

@@ -2,3 +2,26 @@
     "device_id": "67d0448624d772325524e498_emp_test",
     "secret": "43257d46f0f7d86ac73ddcf8a047918b"
 }
+
+@learn @js @learn.wxml @learn.wxss @learn.js @learn.json 我先要需要通过微信小程序使用mqtt协议订阅华为云中的物联网设备消息,请你帮助我完成代码,注意你只能修改learn文件夹下的微信小程序文件夹,静止修改其他文件夹.
+
+这是连接可能需要的信息
+{
+    设备ID: "67d0448624d772325524e498_emp_test",
+    密钥: "43257d46f0f7d86ac73ddcf8a047918b"
+    基础版实例“MQTT over WebSocket”协议对应的域名为：iot-mqtts.cn-north-4.myhuaweicloud.com
+}
+这是clientid:67d0448624d772325524e498_emp_test_0_0_2025031606
+
+这是hostname:e3ce2a4c4b.st1.iotda-device.cn-north-4.myhuaweicloud.com
+
+这是华为云的mqtt参数哪里给的密码password:6e8a7103125915a50766d1ff9e8b4b81bc72c29c9bf41cb27bd2a98f95208219(不确定有没有用)
+
+设备标识码是:emp_test,服务名称也是emp_test
+
+
+在生成代码之前请重复一遍我要你做的指令,我确定无误后在开始生成代码 @Web 
+
+
+
+e3ce2a4c4b.st1.iotda-device.cn-north-4.myhuaweicloud.com（1883）

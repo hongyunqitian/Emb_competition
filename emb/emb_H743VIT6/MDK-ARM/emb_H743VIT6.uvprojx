@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\User\AT_esp01s</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -419,6 +419,16 @@
               <FileName>stm32h7xx_hal_msp.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32h7xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>AT_esp_01s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\AT_esp01s\AT_esp_01s.c</FilePath>
+            </File>
+            <File>
+              <FileName>AT_esp_01s.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\AT_esp01s\AT_esp_01s.h</FilePath>
             </File>
           </Files>
         </Group>
