@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <configuration>
+    <name>Debug</name>
+    <toolchain>
+      <name>STM8</name>
+    </toolchain>
+    <debug>1</debug>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <toolchain>
+      <name>STM8</name>
+    </toolchain>
+    <debug>0</debug>
+  </configuration>
+  <group>
+    <name>user</name>
+    <file>
+      <name>$PROJ_DIR$\..\USER\delay.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\HX711.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\USER\main.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_clk.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_gpio.c</name>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\FWlib\src\stm8s_uart1.c</name>
+    </file>
+  </group>
+</project>
+
+

@@ -1,0 +1,20 @@
+--cpu Cortex-M3
+".\obj\main.o"
+".\obj\stm32f10x_it.o"
+".\obj\delay.o"
+".\obj\misc.o"
+".\obj\stm32f10x_dbgmcu.o"
+".\obj\stm32f10x_exti.o"
+".\obj\stm32f10x_fsmc.o"
+".\obj\stm32f10x_gpio.o"
+".\obj\stm32f10x_pwr.o"
+".\obj\stm32f10x_sdio.o"
+".\obj\stm32f10x_flash.o"
+".\obj\stm32f10x_rcc.o"
+".\obj\core_cm3.o"
+".\obj\system_stm32f10x.o"
+".\obj\startup_stm32f10x_hd.o"
+--strict --scatter ".\Obj\PHOTO.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\List\PHOTO.map" -o .\Obj\PHOTO.axf

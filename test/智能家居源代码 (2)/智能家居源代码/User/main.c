@@ -84,7 +84,7 @@ char AT_SUB[]="AT+MQTTSUB=0,\"devices/humj_tmp/sys/messages/down\",1\r\n";
 char AT_PUB1[]="AT+MQTTPUBRAW=0,\"$oc/devices/6684a206a559ef6226666ab5_humj_tmp/user/up\",100,0,0\r\n";
 char AT_PUB2[]="{ \"content\": {\"hum\":\"11\",\"fumes\":\"50\",\"tem\":\"11\",\"light\":\"1\",\"water\":\"1\"} }";
 
-int main(void)
+int main(void)33
 {	
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
 	

@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\User\AT_esp01s</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\User\AT_esp01s;..\User\GPIO_I2C_HAL;..\User\GPIO_I2C_HAL;..\User\WaterPump</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -429,6 +429,36 @@
               <FileName>AT_esp_01s.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\User\AT_esp01s\AT_esp_01s.h</FilePath>
+            </File>
+            <File>
+              <FileName>BH71750.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\BH1750\BH71750.c</FilePath>
+            </File>
+            <File>
+              <FileName>BH71750.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\BH1750\BH71750.h</FilePath>
+            </File>
+            <File>
+              <FileName>i2c_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\GPIO_I2C_HAL\i2c_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>i2c_hal.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\GPIO_I2C_HAL\i2c_hal.h</FilePath>
+            </File>
+            <File>
+              <FileName>WaterPump.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\WaterPump\WaterPump.c</FilePath>
+            </File>
+            <File>
+              <FileName>WaterPump.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\WaterPump\WaterPump.h</FilePath>
             </File>
           </Files>
         </Group>

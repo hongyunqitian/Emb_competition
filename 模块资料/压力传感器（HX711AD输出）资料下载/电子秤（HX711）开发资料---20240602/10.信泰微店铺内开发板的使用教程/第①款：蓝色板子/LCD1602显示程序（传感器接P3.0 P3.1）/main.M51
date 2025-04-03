@@ -1,0 +1,419 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        05/30/2020  11:00:49  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\KEIL\C51\BIN\BL51.EXE main.obj, HX711.obj, LCD1602.obj TO main RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL WITH FLOATING POINT ARITHMETIC
+
+
+INPUT MODULES INCLUDED:
+  main.obj (MAIN)
+  HX711.obj (HX711)
+  LCD1602.obj (LCD1602)
+  D:\KEIL\C51\LIB\C51FPS.LIB (?C?FPDIV)
+  D:\KEIL\C51\LIB\C51FPS.LIB (?C?FCAST)
+  D:\KEIL\C51\LIB\C51FPS.LIB (?C?CASTF)
+  D:\KEIL\C51\LIB\C51FPS.LIB (?C?FPGETOPN)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?CLDPTR)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?SLDIV)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?LNEG)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?SLCMP)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?LSHL)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_INIT)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?ULDIV)
+
+
+LINK MAP OF MODULE:  main (MAIN)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000DH     UNIT         ?DT?MAIN
+            DATA    0015H     0003H     UNIT         _DATA_GROUP_
+                    0018H     0008H                  *** GAP ***
+            BIT     0020H.0   0000H.1   UNIT         ?BI?MAIN
+                    0020H.1   0000H.7                *** GAP ***
+            IDATA   0021H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     027DH     UNIT         ?C?LIB_CODE
+            CODE    0280H     00D4H     UNIT         ?PR?MAIN?MAIN
+            CODE    0354H     008CH     UNIT         ?C_C51STARTUP
+            CODE    03E0H     007DH     UNIT         ?PR?GET_WEIGHT?MAIN
+            CODE    045DH     0044H     UNIT         ?C?LDIV
+            CODE    04A1H     0041H     UNIT         ?PR?HX711_READ?HX711
+            CODE    04E2H     0026H     UNIT         ?PR?_LCD1602_WRITE_WORD?LCD1602
+            CODE    0508H     0020H     UNIT         ?PR?_DELAY_MS?MAIN
+            CODE    0528H     0020H     UNIT         ?PR?_LCD1602_DELAY_MS?LCD1602
+            CODE    0548H     001AH     UNIT         ?CO?MAIN
+            CODE    0562H     0018H     UNIT         ?C_INITSEG
+            CODE    057AH     0018H     UNIT         ?PR?INIT_LCD1602?LCD1602
+            CODE    0592H     0015H     UNIT         ?PR?_LCD1602_WRITE_COM?LCD1602
+            CODE    05A7H     0015H     UNIT         ?PR?_LCD1602_WRITE_DATA?LCD1602
+            CODE    05BCH     0014H     UNIT         ?PR?SCAN_KEY?MAIN
+            CODE    05D0H     000CH     UNIT         ?PR?GET_MAOPI?MAIN
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/30/2020  11:00:49  PAGE 2
+
+
+            CODE    05DCH     0003H     UNIT         ?PR?DELAY__HX711_US?HX711
+
+
+
+OVERLAY MAP OF MODULE:   main (MAIN)
+
+
+SEGMENT                                   DATA_GROUP 
+  +--> CALLED SEGMENT                   START    LENGTH
+-------------------------------------------------------
+?C_C51STARTUP                           -----    -----
+  +--> ?PR?MAIN?MAIN
+  +--> ?C_INITSEG
+
+?PR?MAIN?MAIN                           -----    -----
+  +--> ?PR?INIT_LCD1602?LCD1602
+  +--> ?PR?_LCD1602_WRITE_COM?LCD1602
+  +--> ?CO?MAIN
+  +--> ?PR?_LCD1602_WRITE_WORD?LCD1602
+  +--> ?PR?_DELAY_MS?MAIN
+  +--> ?PR?GET_MAOPI?MAIN
+  +--> ?PR?GET_WEIGHT?MAIN
+  +--> ?PR?SCAN_KEY?MAIN
+  +--> ?PR?_LCD1602_WRITE_DATA?LCD1602
+
+?PR?INIT_LCD1602?LCD1602                -----    -----
+  +--> ?PR?_LCD1602_WRITE_COM?LCD1602
+
+?PR?_LCD1602_WRITE_COM?LCD1602          -----    -----
+  +--> ?PR?_LCD1602_DELAY_MS?LCD1602
+
+?PR?_LCD1602_WRITE_WORD?LCD1602         0015H    0003H
+  +--> ?PR?_LCD1602_WRITE_DATA?LCD1602
+
+?PR?_LCD1602_WRITE_DATA?LCD1602         -----    -----
+  +--> ?PR?_LCD1602_DELAY_MS?LCD1602
+
+?PR?GET_MAOPI?MAIN                      -----    -----
+  +--> ?PR?HX711_READ?HX711
+
+?PR?HX711_READ?HX711                    -----    -----
+  +--> ?PR?DELAY__HX711_US?HX711
+
+?PR?GET_WEIGHT?MAIN                     -----    -----
+  +--> ?PR?HX711_READ?HX711
+
+?PR?SCAN_KEY?MAIN                       -----    -----
+  +--> ?PR?_DELAY_MS?MAIN
+  +--> ?PR?GET_MAOPI?MAIN
+
+
+
+SYMBOL TABLE OF MODULE:  main (MAIN)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/30/2020  11:00:49  PAGE 3
+
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  C:05BCH         PUBLIC        Scan_Key
+  B:0090H.7       PUBLIC        speak
+  D:00B8H         PUBLIC        IP
+  B:00B0H.2       PUBLIC        KEY1
+  D:0008H         PUBLIC        flag
+  C:0280H         PUBLIC        main
+  C:0508H         PUBLIC        _Delay_ms
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  D:0009H         PUBLIC        Weight_Maopi
+  D:000DH         PUBLIC        Weight_Shiwu
+  D:00C8H         PUBLIC        T2CON
+  B:0020H.0       PUBLIC        Flag_ERROR
+  C:03E0H         PUBLIC        Get_Weight
+  D:0011H         PUBLIC        HX711_Buffer
+  C:05D0H         PUBLIC        Get_Maopi
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          MAIN
+  C:0280H         LINE#         33
+  C:0280H         LINE#         34
+  C:0280H         LINE#         35
+  C:0283H         LINE#         39
+  C:0286H         LINE#         40
+  C:028BH         LINE#         41
+  C:0294H         LINE#         42
+  C:029BH         LINE#         44
+  C:029EH         LINE#         46
+  C:029EH         LINE#         47
+  C:029EH         LINE#         48
+  C:02A0H         LINE#         49
+  C:02A3H         LINE#         50
+  C:02A5H         LINE#         52
+  C:02A8H         LINE#         55
+  C:02ABH         LINE#         56
+  C:02ABH         LINE#         57
+  C:02B0H         LINE#         58
+  C:02B9H         LINE#         59
+  C:02BBH         LINE#         60
+  C:02BDH         LINE#         62
+  C:02BDH         LINE#         63
+  C:02BFH         LINE#         64
+  C:02C4H         LINE#         65
+  C:02DDH         LINE#         66
+  C:0307H         LINE#         67
+  C:0330H         LINE#         68
+  C:0348H         LINE#         69
+  C:0351H         LINE#         70
+  C:0351H         LINE#         72
+  -------         ENDPROC       MAIN
+  -------         PROC          SCAN_KEY
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/30/2020  11:00:49  PAGE 4
+
+
+  C:05BCH         LINE#         76
+  C:05BCH         LINE#         77
+  C:05BCH         LINE#         78
+  C:05BFH         LINE#         79
+  C:05BFH         LINE#         80
+  C:05C6H         LINE#         81
+  C:05C9H         LINE#         82
+  C:05C9H         LINE#         83
+  C:05CCH         LINE#         84
+  C:05CFH         LINE#         85
+  C:05CFH         LINE#         86
+  C:05CFH         LINE#         87
+  -------         ENDPROC       SCAN_KEY
+  -------         PROC          GET_WEIGHT
+  C:03E0H         LINE#         92
+  C:03E0H         LINE#         93
+  C:03E0H         LINE#         94
+  C:03EBH         LINE#         95
+  C:0404H         LINE#         96
+  C:0417H         LINE#         97
+  C:0417H         LINE#         98
+  C:0439H         LINE#         101
+  C:044DH         LINE#         102
+  C:044DH         LINE#         103
+  C:044FH         LINE#         104
+  C:0450H         LINE#         106
+  C:0450H         LINE#         107
+  C:0452H         LINE#         108
+  C:0452H         LINE#         109
+  C:0453H         LINE#         111
+  C:0453H         LINE#         112
+  C:045CH         LINE#         114
+  C:045CH         LINE#         116
+  -------         ENDPROC       GET_WEIGHT
+  -------         PROC          GET_MAOPI
+  C:05D0H         LINE#         121
+  C:05D0H         LINE#         122
+  C:05D0H         LINE#         123
+  C:05DBH         LINE#         124
+  -------         ENDPROC       GET_MAOPI
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:0508H         LINE#         129
+  C:0508H         LINE#         130
+  C:0508H         LINE#         132
+  C:0512H         LINE#         133
+  C:0527H         LINE#         134
+  -------         ENDPROC       _DELAY_MS
+  -------         ENDMOD        MAIN
+
+  -------         MODULE        HX711
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/30/2020  11:00:49  PAGE 5
+
+
+  D:00B0H         PUBLIC        P3
+  B:00A8H.7       PUBLIC        EA
+  D:00A8H         PUBLIC        IE
+  C:04A1H         PUBLIC        HX711_Read
+  D:00B8H         PUBLIC        IP
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  B:00B0H.1       PUBLIC        HX711_DOUT
+  D:00C8H         PUBLIC        T2CON
+  C:05DCH         PUBLIC        Delay__hx711_us
+  D:00D0H         PUBLIC        PSW
+  B:00B0H.0       PUBLIC        HX711_SCK
+  -------         PROC          DELAY__HX711_US
+  C:05DCH         LINE#         7
+  C:05DCH         LINE#         8
+  C:05DCH         LINE#         9
+  C:05DDH         LINE#         10
+  C:05DEH         LINE#         11
+  -------         ENDPROC       DELAY__HX711_US
+  -------         PROC          HX711_READ
+  -------         DO            
+  D:0004H         SYMBOL        count
+  D:0003H         SYMBOL        i
+  -------         ENDDO         
+  C:04A1H         LINE#         16
+  C:04A1H         LINE#         17
+  C:04A1H         LINE#         20
+  C:04A3H         LINE#         21
+  C:04A6H         LINE#         22
+  C:04A8H         LINE#         23
+  C:04B0H         LINE#         24
+  C:04B2H         LINE#         25
+  C:04B5H         LINE#         26
+  C:04B7H         LINE#         27
+  C:04B9H         LINE#         28
+  C:04B9H         LINE#         29
+  C:04BBH         LINE#         30
+  C:04C0H         LINE#         31
+  C:04C2H         LINE#         32
+  C:04C5H         LINE#         33
+  C:04D2H         LINE#         34
+  C:04D6H         LINE#         35
+  C:04D8H         LINE#         36
+  C:04DCH         LINE#         37
+  C:04DFH         LINE#         38
+  C:04E1H         LINE#         39
+  C:04E1H         LINE#         40
+  -------         ENDPROC       HX711_READ
+  -------         ENDMOD        HX711
+
+  -------         MODULE        LCD1602
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+  D:00B0H         PUBLIC        P3
+  D:00A8H         PUBLIC        IE
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/30/2020  11:00:49  PAGE 6
+
+
+  B:00A0H.7       PUBLIC        LCD1602_EN
+  C:057AH         PUBLIC        Init_LCD1602
+  D:00B8H         PUBLIC        IP
+  B:00A0H.6       PUBLIC        LCD1602_RS
+  B:00A0H.5       PUBLIC        LCD1602_RW
+  C:05A7H         PUBLIC        _LCD1602_write_data
+  D:0098H         PUBLIC        SCON
+  D:0088H         PUBLIC        TCON
+  C:04E2H         PUBLIC        _LCD1602_write_word
+  C:0592H         PUBLIC        _LCD1602_write_com
+  C:0528H         PUBLIC        _LCD1602_delay_ms
+  D:00C8H         PUBLIC        T2CON
+  D:00D0H         PUBLIC        PSW
+  -------         PROC          _LCD1602_DELAY_MS
+  D:0006H         SYMBOL        n
+  -------         DO            
+  D:0004H         SYMBOL        i
+  D:0002H         SYMBOL        j
+  -------         ENDDO         
+  C:0528H         LINE#         15
+  C:0528H         LINE#         16
+  C:0528H         LINE#         18
+  C:0532H         LINE#         19
+  C:0547H         LINE#         20
+  -------         ENDPROC       _LCD1602_DELAY_MS
+  -------         PROC          _LCD1602_WRITE_COM
+  D:0001H         SYMBOL        com
+  C:0592H         LINE#         25
+  C:0594H         LINE#         26
+  C:0594H         LINE#         27
+  C:0596H         LINE#         28
+  C:059DH         LINE#         29
+  C:059FH         LINE#         30
+  C:05A1H         LINE#         31
+  C:05A4H         LINE#         32
+  C:05A6H         LINE#         33
+  -------         ENDPROC       _LCD1602_WRITE_COM
+  -------         PROC          _LCD1602_WRITE_DATA
+  D:0001H         SYMBOL        dat
+  C:05A7H         LINE#         38
+  C:05A9H         LINE#         39
+  C:05A9H         LINE#         40
+  C:05ABH         LINE#         41
+  C:05B2H         LINE#         42
+  C:05B4H         LINE#         43
+  C:05B6H         LINE#         44
+  C:05B9H         LINE#         45
+  C:05BBH         LINE#         46
+  -------         ENDPROC       _LCD1602_WRITE_DATA
+  -------         PROC          _LCD1602_WRITE_WORD
+  D:0015H         SYMBOL        s
+  C:04E2H         LINE#         51
+  C:04E8H         LINE#         52
+  C:04E8H         LINE#         53
+  C:04F7H         LINE#         54
+  C:04F7H         LINE#         55
+  C:04FAH         LINE#         56
+BL51 BANKED LINKER/LOCATER V6.22                                                      05/30/2020  11:00:49  PAGE 7
+
+
+  C:0505H         LINE#         57
+  C:0507H         LINE#         58
+  -------         ENDPROC       _LCD1602_WRITE_WORD
+  -------         PROC          INIT_LCD1602
+  C:057AH         LINE#         60
+  C:057AH         LINE#         61
+  C:057AH         LINE#         62
+  C:057CH         LINE#         63
+  C:057EH         LINE#         64
+  C:0583H         LINE#         65
+  C:0588H         LINE#         66
+  C:058DH         LINE#         67
+  -------         ENDPROC       INIT_LCD1602
+  -------         ENDMOD        LCD1602
+
+  -------         MODULE        ?C?FPDIV
+  C:0006H         PUBLIC        ?C?FPDIV
+  -------         ENDMOD        ?C?FPDIV
+
+  -------         MODULE        ?C?FCAST
+  C:00ADH         PUBLIC        ?C?FCASTC
+  C:00A8H         PUBLIC        ?C?FCASTI
+  C:00A3H         PUBLIC        ?C?FCASTL
+  -------         ENDMOD        ?C?FCAST
+
+  -------         MODULE        ?C?CASTF
+  C:00E1H         PUBLIC        ?C?CASTF
+  -------         ENDMOD        ?C?CASTF
+
+  -------         MODULE        ?C?CLDPTR
+  C:0162H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+  -------         MODULE        ?C?SLDIV
+  C:045DH         PUBLIC        ?C?SLDIV
+  -------         ENDMOD        ?C?SLDIV
+
+  -------         MODULE        ?C?LNEG
+  C:017BH         PUBLIC        ?C?LNEG
+  -------         ENDMOD        ?C?LNEG
+
+  -------         MODULE        ?C?SLCMP
+  C:0189H         PUBLIC        ?C?SLCMP
+  -------         ENDMOD        ?C?SLCMP
+
+  -------         MODULE        ?C?LSHL
+  C:019FH         PUBLIC        ?C?LSHL
+  -------         ENDMOD        ?C?LSHL
+
+  -------         MODULE        ?C?ULDIV
+  C:01EEH         PUBLIC        ?C?ULDIV
+  -------         ENDMOD        ?C?ULDIV
+
+Program Size: data=25.1 xdata=0 code=1503
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

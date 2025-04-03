@@ -1,0 +1,90 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=183281885
+[CodeCoverage]
+Enabled=_ 0
+[CallStack]
+ShowArgs=0
+[Disassembly]
+MixedMode=0
+[CallStackLog]
+Enabled=0
+[DriverProfiling]
+Enabled=0
+Mode=1
+Graph=0
+Symbiont=0
+Exclusions=
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[Breakpoints2]
+Count=0
+[Interrupts]
+Enabled=1
+[MemoryMap]
+Enabled=0
+Base=0
+UseAuto=0
+TypeViolation=1
+UnspecRange=1
+ActionState=1
+[Trace1]
+Enabled=0
+ShowSource=1
+[Simulator]
+Freq=16000000
+[DataSample]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Breakpoints]
+Count=0
+[Aliases]
+A0=_ "C:\Users\DYM\Desktop\MPU6050a\STM8\FWlib\src\stm8s_clk.c" ""
+A1=_ "C:\Users\DYM\Desktop\MPU6050a\STM8\FWlib\src\stm8s_tim1.c" ""
+A2=_ "C:\Users\DYM\Desktop\MPU6050a\STM8\FWlib\src\stm8s_uart1.c" ""
+A3=_ "C:\Users\DYM\Desktop\MPU6050a\STM8\KalmanFilter\Kalman_Filter.c" ""
+A4=_ "C:\Users\DYM\Desktop\MPU6050a\STM8\USER\MPU6050.c" ""
+A5=_ "C:\Users\DYM\Desktop\MPU6050a\STM8\USER\main.c" ""
+A6=_ "C:\Users\SDMSJY\Desktop\电压电流1602\STM8\FWlib\src\stm8s_clk.c" ""
+A7=_ "C:\Users\SDMSJY\Desktop\电压电流1602\STM8\FWlib\src\stm8s_exti.c" ""
+A8=_ "C:\Users\SDMSJY\Desktop\电压电流1602\STM8\FWlib\src\stm8s_flash.c" ""
+A9=_ "C:\Users\SDMSJY\Desktop\电压电流1602\STM8\FWlib\src\stm8s_gpio.c" ""
+A10=_ "C:\Users\SDMSJY\Desktop\电压电流1602\STM8\FWlib\src\stm8s_tim1.c" ""
+A11=_ "C:\Users\SDMSJY\Desktop\电压电流1602\STM8\FWlib\src\stm8s_uart1.c" ""
+A12=_ "C:\Users\SDMSJY\Desktop\电压电流1602\STM8\USER\main.c" ""
+A13=_ "C:\Users\SDMSJY\Desktop\龙斌辉\气泵\STM8\FWlib\src\stm8s_gpio.c" ""
+A14=_ "C:\Users\SDMSJY\Desktop\龙斌辉\气泵\STM8\FWlib\src\stm8s_uart1.c" "C:\Users\SDMSJY\Desktop\状态无纸记录系统\STM8\FWlib\src\stm8s_uart1.c"
+A15=_ "C:\Users\SDMSJY\Desktop\龙斌辉新\主控\STM8\CC1101\CC1101.c" ""
+Count=16
+SuppressDialog=1
+[DebuggerSettings]
+DisableInterruptsWhenStepping=0

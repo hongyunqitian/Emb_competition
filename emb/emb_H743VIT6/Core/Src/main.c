@@ -24,8 +24,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "stdlib.h"
-#include "stdio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -102,7 +100,12 @@ int main(void)
   MX_GPIO_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-printf("ok");
+ WaterPump_Init();
+ WaterPump(1);
+ HAL_Delay(1000);
+ WaterPump(0);
+
+ // printf("ok");
   /* USER CODE END 2 */
 
   /* Infinite loop */

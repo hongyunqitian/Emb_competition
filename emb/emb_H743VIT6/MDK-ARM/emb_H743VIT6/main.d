@@ -34,8 +34,11 @@ emb_h743vit6\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr.h
 emb_h743vit6\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_pwr_ex.h
 emb_h743vit6\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart.h
 emb_h743vit6\main.o: ../Drivers/STM32H7xx_HAL_Driver/Inc/stm32h7xx_hal_uart_ex.h
+emb_h743vit6\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+emb_h743vit6\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+emb_h743vit6\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+emb_h743vit6\main.o: ..\User\WaterPump\WaterPump.h
+emb_h743vit6\main.o: ../Core/Inc/main.h
 emb_h743vit6\main.o: ../Core/Inc/memorymap.h
 emb_h743vit6\main.o: ../Core/Inc/usart.h
 emb_h743vit6\main.o: ../Core/Inc/gpio.h
-emb_h743vit6\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
-emb_h743vit6\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h

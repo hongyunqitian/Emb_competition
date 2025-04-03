@@ -10,7 +10,7 @@ import tempfile
 def generate_mock_data(n_samples=1000):
     """
     生成模拟的MPU6050数据
-    n_samples: 每种状态的样本数量
+    n_samples: 每种状态的样本数量入input_shape，这是正确的。但是
     """
     # 创建空数组存储数据
     X = []
@@ -52,8 +52,9 @@ def generate_mock_data(n_samples=1000):
             gy = np.random.normal(2.0, 0.5, n_samples)
             gz = np.random.normal(1.0, 0.3, n_samples)
         
-        # 组合数据
-        for i in range(n_samples):
+    """_summary_
+    """        # 组合数据
+    for i in range(n_samples):
             X.append([ax[i], ay[i], az[i], gx[i], gy[i], gz[i]])
             y.append(state)
     

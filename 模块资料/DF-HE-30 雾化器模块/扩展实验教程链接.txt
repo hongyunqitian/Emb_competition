@@ -1,0 +1,10 @@
+Arduino 无限扩展传感器教程 链接：https://pan.baidu.com/s/1mY_hBxDqcjrAndZw_D8eXQ?pwd=lx88
+
+ESP32 无限扩展传感器教程 链接：https://pan.baidu.com/s/107bEi0DX70DFgxsLTJ-9XA?pwd=lx88
+
+STM32 无限扩展传感器教程 链接：https://pan.baidu.com/s/1aAFzaxclvI1eYf2ZSZJPkw?pwd=lx88 
+
+Micro:bit 无限扩展传感器教程 链接：链接：https://pan.baidu.com/s/1bsmvmne-NFQjX3Bef8piLw?pwd=lx88
+
+
+实验器材来自淘宝店铺 良芯电子 链接：https://sourl.cn/7FXAif

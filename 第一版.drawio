@@ -1,0 +1,44 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0" version="26.1.3">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1002" dy="661" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2336" pageHeight="1654" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="1cMcQoOs9pmXaazfiGai-1" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1140" y="600" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1cMcQoOs9pmXaazfiGai-2" value="电机驱动小齿轮" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1480" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1cMcQoOs9pmXaazfiGai-5" value="" style="endArrow=classic;html=1;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="1cMcQoOs9pmXaazfiGai-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1310" y="640" as="sourcePoint" />
+            <mxPoint x="1370" y="640" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1cMcQoOs9pmXaazfiGai-6" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1440" y="600" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1cMcQoOs9pmXaazfiGai-7" value="步进电机驱动小齿轮" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1190" y="630" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1cMcQoOs9pmXaazfiGai-8" value="同步带的小齿轮带动大齿轮" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1490" y="625" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1cMcQoOs9pmXaazfiGai-9" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1680" y="600" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="1cMcQoOs9pmXaazfiGai-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" target="1cMcQoOs9pmXaazfiGai-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1600" y="640" as="sourcePoint" />
+            <mxPoint x="1650" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1cMcQoOs9pmXaazfiGai-11" value="滚筒转动铲猫砂" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1720" y="625" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

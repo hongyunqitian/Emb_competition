@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"hx711get\startup_stm32f103xb.o"
+"hx711get\oled.o"
+"hx711get\main.o"
+"hx711get\gpio.o"
+"hx711get\usart.o"
+"hx711get\stm32f1xx_it.o"
+"hx711get\stm32f1xx_hal_msp.o"
+"hx711get\system_stm32f1xx.o"
+"hx711get\stm32f1xx_hal_gpio_ex.o"
+"hx711get\stm32f1xx_hal_tim.o"
+"hx711get\stm32f1xx_hal_tim_ex.o"
+"hx711get\stm32f1xx_hal_uart.o"
+"hx711get\stm32f1xx_hal.o"
+"hx711get\stm32f1xx_hal_rcc.o"
+"hx711get\stm32f1xx_hal_rcc_ex.o"
+"hx711get\stm32f1xx_hal_gpio.o"
+"hx711get\stm32f1xx_hal_dma.o"
+"hx711get\stm32f1xx_hal_cortex.o"
+"hx711get\stm32f1xx_hal_pwr.o"
+"hx711get\stm32f1xx_hal_flash.o"
+"hx711get\stm32f1xx_hal_flash_ex.o"
+"hx711get\stm32f1xx_hal_exti.o"
+--library_type=microlib --strict --scatter "hx711get\hx711get.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hx711get.map" -o hx711get\hx711get.axf

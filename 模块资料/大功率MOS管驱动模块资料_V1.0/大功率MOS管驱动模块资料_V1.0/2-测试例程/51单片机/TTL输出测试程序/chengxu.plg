@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+G:\资料\大功率MOS管驱动模块资料\2-测试例程\51单片机\TTL输出测试程序\chengxu.uvproj
+Project File Date:  08/23/2022
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling chengxu.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?CHENGXU
+Program Size: data=9.0 xdata=0 code=56
+creating hex file from "chengxu"...
+"chengxu" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?CHENGXU
+Program Size: data=9.0 xdata=0 code=56
+creating hex file from "chengxu"...
+"chengxu" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+compiling chengxu.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?DELAY?CHENGXU
+Program Size: data=9.0 xdata=0 code=56
+creating hex file from "chengxu"...
+"chengxu" - 0 Error(s), 1 Warning(s).

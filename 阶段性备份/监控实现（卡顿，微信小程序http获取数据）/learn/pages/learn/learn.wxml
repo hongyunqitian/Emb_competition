@@ -1,0 +1,9 @@
+<view class="container">
+    <button bindtap="sendMessage" disabled="{{!connected}}">发送消息</button>
+    
+    <!-- 显示Base64图片 -->
+    <view class="image-container" wx:if="{{imageData}}">
+        <text class="section-title">设备图像：</text>
+        <image src="{{imageData}}" mode="widthFix" class="device-image"></image>
+    </view>
+</view>    
